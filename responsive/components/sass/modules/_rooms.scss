@@ -1,0 +1,62 @@
+
+#rooms {
+    header {
+        margin-bottom: 20px;
+        @include container (90%);
+        @include breakpoint($medium) {
+            @include container;
+            @include pad(1,1);
+        } //beakpoint
+    } //header
+
+    .room {
+        @include container(100%);
+        @include pad(1,1);
+
+        // Compass flexbox mixins
+        @include display-flex(); //...........  
+        @include align-items(center); //...... Centering content on images
+        @include justify-content(center); //..
+
+        @include breakpoint($small) {
+            @include pad(7,1);
+        } // small breakpoint
+        padding: 200px 0; //In case jQuery does not work as Compass doesn't work
+        margin: 2px 0;
+        
+
+        .content {
+            @include border-radius(10px);
+            background: rgba($light, .8);
+            padding: 20px;
+
+            h1 {
+                color: red;
+            } //h1
+        } //content
+    } //room
+
+    #piccadilly {
+        @include backImage('../images/hotel/rooms_piccadilly.jpg');
+    } //piccadilly 
+
+    #cambridge {
+        @include backImage('../images/hotel/rooms_cambridge.jpg');
+    } //cambridge
+
+    #westminster {
+        @include backImage('../images/hotel/rooms_westminster.jpg');
+    } //westminster
+
+    #oxford {
+        @include backImage('../images/hotel/rooms_oxford.jpg');
+    } //oxford
+
+    #victoria {
+        @include backImage('../images/hotel/rooms_victoria.jpg');
+    } //victoria
+
+    #manchester {
+        @include backImage('../images/hotel/rooms_manchester.jpg');
+    } //manchester
+} //rooms

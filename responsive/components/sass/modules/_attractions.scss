@@ -1,0 +1,25 @@
+
+#attractions {
+    @include clearfix;
+    @include container(100%);
+    @include backImage('../images/hotel/attractions.jpg');
+    padding: 0;
+
+    // Compass flexbox mixins
+    @include display-flex(); //...........
+    @include align-items(center); //...... Vertically center item within image
+    @include justify-content(center); //...
+
+    article {
+        @include container(80%);
+        @include breakpoint($medium) {
+            @include container(50%);
+        } // breakpoint
+        padding: 20px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        background: rgba($light, .8);
+        @include border-radius(10px);
+    } //article
+} // attractions
+
