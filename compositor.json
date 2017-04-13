@@ -1,0 +1,83 @@
+{
+  "name": "markbojesen/responsive-one-page",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "master",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/markbojesen/responsive-one-page",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "responsive-one-page",
+      "subhead": "One page responsive design created with SASS, Compact, Susy and Breakpoint. All credits to the original author and creator Ray Villalobos and he's course on lynda.com",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "responsive-one-page: One page responsive design created with SASS, Compact, Susy and Breakpoint. All credits to the original author and creator Ray Villalobos and he's course on lynda.com",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "markbojesen",
+          "repo": "responsive-one-page"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/markbojesen/responsive-one-page",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/markbojesen",
+          "text": "markbojesen"
+        }
+      ]
+    }
+  ]
+}
