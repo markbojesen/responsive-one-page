@@ -1,2 +1,2 @@
 # responsive-one-page
-One page responsive design created with SASS, Compact, Susy and Breakpoint. All credits to the original author and creator Ray Villalobos and he's course on lynda.com
+One page responsive design created with SASS, Compass, Susy and Breakpoint. Project from Lynda.com.
